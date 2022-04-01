@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Poppins';
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #383f43;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-btn {
+  outline: none;
+  border: none;
+  background-color: #ef6292;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  top: 2.5rem;
+  left: 236px;
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn #right {
+  display: none;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header h5 {
+  font-weight: 500;
+}
+
+.header p {
+  font-size: 0.75rem;
+  margin-top: -4px;
+  color: #a8a8a8;
+}
+
+.searchbar {
+  color: #fff;
+  margin-bottom: 3rem;
+  display: flex;
+  background-color: #3f4b51;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.searchbar input {
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  background-color: transparent;
+  width: 140px;
+  margin-left: 10px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link {
+  display: block;
+  color: #f4f4f4;
+  padding: 0.6rem 0;
+}
+
+.nav-link:hover {
+  color: #ef6292;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link svg {
+  width: 20px;
+  margin-right: 1rem;
+  margin-bottom: -5px;
+}
+
+.bottom-links {
+  margin-top: auto;
+}
+
+.sidebar-sm {
+  width: 80px;
+  padding: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-sm .header img {
+  width: 35px;
+  height: 35px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-sm .searchbar {
+  padding: 5px 7px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-sm h5,
+.sidebar-sm p,
+.sidebar-sm .searchbar input,
+.sidebar-sm .nav-link span {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-sm .nav-link {
+  padding: 0.8rem 4px;
+}
+
+.sidebar-sm .nav-link svg {
+  width: 22px;
+}
+
+.sidebar-sm .nav-item:hover {
+  position: relative;
+  background-color: #383f43;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.sidebar-sm .nav-link:hover span {
+  display: block;
+  position: absolute;
+  top: 0.8rem;
+  left: 2.5rem;
+}
+
+.sidebar-sm .toggle-btn {
+  left: 65px;
+  top: 1.8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-sm .toggle-btn #right {
+  display: inline;
+}
+
+.sidebar-sm .toggle-btn #left {
+  display: none;
+}
